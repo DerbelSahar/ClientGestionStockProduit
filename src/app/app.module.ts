@@ -11,6 +11,7 @@ import { ContentComponent } from './Components/content/content.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,

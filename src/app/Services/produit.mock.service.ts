@@ -22,4 +22,12 @@ export class ProduitMockService{
     
     }
 
-    public updateProduit (produit: Produit): Observable<any>}
+    public updateProduit (produit: Produit): Observable<any> {
+      return this.http.put(API_URLS.PRODUITS_URL, produit);
+    }
+  
+    public deleteProduit(id: number): Observable<any> {
+      return this.http.delete(API_URLS.PRODUITS_URL + `/${id}`);
+    }
+  
+  }
